@@ -11,10 +11,7 @@
   
 }
 
-#car{
-height: auto;
-width: auto;
-}
+
 
 #home-container {
 height: 81.45vh;
@@ -44,37 +41,6 @@ color:#073d64;
 padding-top: 20px;
 margin-bottom: 10px;
 }
-
-.btn-group {
-/* background-color: #6ba4cc;  */
-border: none; 
-border-radius: 20px;
-color: white; 
-padding: 10px 24px; 
-margin-bottom: 10px;
-cursor: pointer; 
-float: left; 
-margin-top: 10px;
-}
-
-/* .btn-group button:not(:last-child) {
-border-right: none; 
-}
-
-
-.btn-group:after {
-content: "";
-clear: both;
-display: table;
-}
-
-.btn-group button:hover {
-background-color: #85c48a;
-} */
-
-
-
-
 
 
 @media screen and (max-width: 960px) {
