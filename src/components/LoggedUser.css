@@ -1,0 +1,16 @@
+#WelcomeUser {
+  -webkit-text-stroke: 0.5px black;
+  font-size: 20px;
+  color: #066293;
+  text-decoration: none;
+  margin: auto;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+  
+@media screen and (max-width: 768px) {
+  #WelcomeUser {
+    font-size: 14px;
+  }
+}
+  
