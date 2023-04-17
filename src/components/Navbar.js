@@ -2,10 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 //import LoggedUser from "./LoggedUser";
 import './Navbar.css';
+import logo from './logo .png';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
+      <div className="logo">
+        <img src={logo} alt="Logo"/>
+      </div>
       <ul className="navbar-nav">
         <li className="nav-item">
           <Link to="/" className="nav-link">

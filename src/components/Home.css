@@ -1,17 +1,47 @@
-.header {
-  float: center;
-  color: rgb(0, 0, 0);
-  border: 4px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 10px 10px;
-  margin-top:10px;
-  margin-bottom:10px;
-  background:#c5d5e3;
+*{
+  padding:0;
+  margin:0;
+  
+}
+
+html{
+  font-size:62.5%;
+}
+
+body {
+
+  line-height:1;
+  font-weight:400;
+  color:#555;
+}
+
+
+.heading-primary {
+  font-size:30px;
+  line-height:3.05px;
+  letter-spacing:-0.5px;
+  background:#ECC1D1;
+  font-weight: 700;
+  color:#333;
+  margin-bottom:3.8rem;
+  letter-spacing:-0.5px;
+  font-family:sans-serif;
+  padding-top:30px;
+  
+  
   /*box-shadow: 0px 3px 4px 4px #6ba4cc;*/
   
 }
 
+.description{
+  font-size:2rem;
+  line-height:1.6;
+  margin-bottom:4.8rem;
+  text-align: center;
+  margin-left:45px;
+  margin-right:45px;
 
+}
 
 #home-container {
 height: 81.45vh;
@@ -19,18 +49,21 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
-box-shadow: inset 0 0 0 1000px #b7b0b033;
+box-shadow: inset 0 0 0 1000px #ECC1D1;
 object-fit: contain;
 align-content: space-around;
 flex-wrap:no-wrap;
+margin-top:10px;
+padding-bottom: 300px;
 
 }
 
 .subheader {
   float: center;
-  color: #073d64;
+  color: #90b0e0;
   padding: 20px 30px;
   font-family:Arial, Helvetica, sans-serif;
+  font-size:20px;
 }
 
 .textbox{
@@ -41,11 +74,60 @@ color:#073d64;
 padding-top: 20px;
 margin-bottom: 10px;
 }
+.delivered-tubs{
+  display:flex;
+  align-items:center;
+  gap: 1.6rem;
+  margin-top:2rem;
 
 
-@media screen and (max-width: 960px) {
+}
+
+
+.delivered-imgs{
+  display:flex;
+}
+
+
+.delivered-imgs img{
+  height: 4.8rem;
+  width:4.8rem;
+  border-radius:50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+
+}
+
+.delivered-imgs img:last-child{
+  margin:0;
+}
+
+
+
+.delivered-text{
+
+  font-size:1.8rem;
+  font-weight:600;
+}
+
+.delivered-text span{
+color:white;
+font-weight:700;
+
+}
+
+.ice-cream-main{
+  width: 100%;
+  height:10px;
+  text-align: center;
+
+  
+}
+
+
+@media screen and (max-width: 1280px) {
   #home-container > h1 {
-    font-size: 30px;
+    /*font-size: 10px;*/
     
   }
 }
