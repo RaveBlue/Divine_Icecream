@@ -1,0 +1,88 @@
+/******************/
+/*FOOTER*/
+/******************/
+
+.footer-container {
+  padding: 20rem 0 0 0;
+  display: flex;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color:rgb(174, 214, 236);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  border-top: 1px solid #92b9eb9f;
+  box-shadow: 2px 2px 2px 2px;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  text-align: center;
+  list-style:none;
+  gap:2.4rem;
+}
+
+#contactLink {
+  text-decoration: none;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.copyright{
+  font-size:1.4rem;
+  line-height:1.6;
+  color:#767676;
+  margin-top: auto;
+  display:flex;
+  text-align: center;
+  margin-bottom:38px;
+  
+  
+
+}
+
+
+.shop{
+  color:rgb(210, 105, 184);
+  text-decoration:none;
+  font-size: 13px;
+}
+
+.shop:hover{
+  color:#fff;
+  
+
+}
+
+.contactus{
+  color:rgb(210, 105, 184);
+  text-decoration:none;
+  font-size:13px;
+ 
+}
+.contactus:hover{
+  color:#fff;
+}
+
+.about{
+  color:rgb(210, 105, 184);
+  text-decoration:none;
+  font-size: 13px;
+
+}
+.about:hover{
+  color:#fff;
+}
+
+@media screen and (max-width: 768px) {
+  #contactLink {
+    font-size: 15px;
+  }
+}

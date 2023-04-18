@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs";
 import Products from "./components/Products";
 import Navbar from "./components/Navbar";
 import Shopping_Cart from "./components/Shopping_Cart";
+import Footer from "./components/Footer";
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/Shopping_Cart" element={<Shopping_Cart/>}/> 
         
       </Routes>
+      <Footer/>
     </Router>
     );
   }
@@ -47,9 +49,12 @@ function App() {
   <Route path="/Navbar" component={Navbar} />
   <Route path="/Shopping_Cart" component={Shopping_Cart} />
 
- 
+      
       </Router>
   
+   
+
+
    // </div>
 
   
