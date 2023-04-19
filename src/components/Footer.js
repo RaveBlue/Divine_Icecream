@@ -14,7 +14,7 @@ function Footer({links}) {
         </a>
         <h1> Contact Us </h1>
         <a className="contactus" href="http://localhost:3000/ContactUs" id="ContactUs" to="/ContactUs">
-           Learn More
+           Contact Us
         </a>
        <h1> Business </h1>
         <a className="about" href="http://localhost:3000/AboutUs" id="AboutUs" to="/AboutUs">

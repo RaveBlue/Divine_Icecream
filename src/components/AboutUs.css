@@ -1,0 +1,63 @@
+.protein{
+  text-align: center;
+  margin-top:40px;
+  font-size:28px;
+
+}
+.about1{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  color:darksalmon;
+}
+
+.about-title{
+  text-align: center;
+  margin-top: 50px;
+  font-size:35px;
+  color: #90b0e0;
+}
+
+.describe1{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.describe2{
+  text-align: center;
+  margin-top:30px;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.info{
+  text-align: center;
+  margin-top: 30px;
+  font-size:15px;
+  
+}
+
+.image-logo1{
+  align-items: center;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin:auto;
+  margin-top: 40px;
+}
+
+.otherinfo{
+  text-align: center;
+  font-size: 15px;
+  margin-top:20px;
+}
+
+.location{
+  text-align: center;
+  font-size:15px;
+  margin-top:20px;
+}

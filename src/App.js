@@ -8,6 +8,8 @@ import Products from "./components/Products";
 import Navbar from "./components/Navbar";
 import Shopping_Cart from "./components/Shopping_Cart";
 import Footer from "./components/Footer";
+import "./components/AboutUs.css"
+import ContactUs from "./components/ContactUs";
 
 
 
@@ -34,6 +36,8 @@ function App() {
         <Route exact path="/" element={<Home/>} />
         <Route path="/Products" element={<Products/>} />
         <Route path="/Shopping_Cart" element={<Shopping_Cart/>}/> 
+        <Route path="/AboutUs" element={<AboutUs/>}/>
+        <Route path="/ContactUs" element={<ContactUs/>}/>
         
       </Routes>
       <Footer/>
@@ -48,6 +52,7 @@ function App() {
   <Route path="/Products" component={Products} />
   <Route path="/Navbar" component={Navbar} />
   <Route path="/Shopping_Cart" component={Shopping_Cart} />
+  <Route path="/ContactUs" component={ContactUs}/>
 
       
       </Router>

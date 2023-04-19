@@ -8,3 +8,4 @@ export { default as Review } from "./Review";
 export { default as Footer } from "./Footer";
 export { default as AboutUs } from "./AboutUs";
 export { default as Navbar } from "./Navbar";
+export { default as ContactUs } from "./ContactUs";     
