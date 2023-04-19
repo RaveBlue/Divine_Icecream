@@ -26,8 +26,21 @@ const Navbar = () => {
             Cart 
           </Link>
         </li>
+        <li className="nav-item">
+          <button type="button" className="login-button">
+          <Link to="/Login" className="nav-link">
+            Login
+          </Link>
+          </button>
+        </li>
+        <li className="nav-item">
+          <button type="button" className="signup-button">
+            <Link to="/Signup" className="nav-link">
+              Sign up
+            </Link>
+          </button>
 
-
+        </li>
       </ul>
     </nav>
   );

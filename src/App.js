@@ -10,6 +10,7 @@ import Shopping_Cart from "./components/Shopping_Cart";
 import Footer from "./components/Footer";
 import "./components/AboutUs.css"
 import ContactUs from "./components/ContactUs";
+import Review from "./components/Review";
 
 
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/Shopping_Cart" element={<Shopping_Cart/>}/> 
         <Route path="/AboutUs" element={<AboutUs/>}/>
         <Route path="/ContactUs" element={<ContactUs/>}/>
+        <Route path="/Review" element={<Review/>}/>
         
       </Routes>
       <Footer/>

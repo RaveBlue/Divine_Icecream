@@ -51,13 +51,13 @@ async function createTables() {
     
   );
   INSERT INTO products (product_name, description, price, image_url) VALUES 
-   ('Strawberry Chocolate', 'Vanilla ice cream swirled with strawberry sauce and swirls of chocolate.', 4.85, 'https://example.com/images/strawberry_chocolate.jpg'),
-   ('Choco-loco', 'Chocolate ice cream with fudge swirls and chocolate chunks.', 4.75, 'https://example.com/images/choco_loco.jpg'),
-   ('Blue Mint Chip', 'Mint ice cream with blue thin chocolate pieces and blue coloring.', 4.98, 'https://example.com/images/blue_mint_chip.jpg'),
-   ('Cookies and Cream', 'Vanilla ice cream with cookie pieces.', 3.99, 'https://example.com/images/cookies_and_cream.jpg'),
-   ('Green Tea', 'Green tea flavored ice cream.', 4.50, 'https://example.com/images/green_tea.jpg'),
-   ('Peanut Butter Swirl', 'Vanilla ice cream with peanut butter swirls.', 4.99, 'https://example.com/images/peanut_butter_swirl.jpg'),
-   ('Cake', 'Cake-flavored ice cream with sprinkles.', 4.00, 'https:/ ')
+   ('Strawberry Chocolate', 'Vanilla ice cream swirled with strawberry sauce and swirls of chocolate.', 4.85, 'https://example.com/images/strawberry_chocolate.png'),
+   ('Choco-loco', 'Chocolate ice cream with fudge swirls and chocolate chunks.', 4.75, 'https://example.com/images/choco_loco.png'),
+   ('Blue Mint Chip', 'Mint ice cream with blue thin chocolate pieces and blue coloring.', 4.98, 'https://example.com/images/blue_mint_chip.png'),
+   ('Cookies and Cream', 'Vanilla ice cream with cookie pieces.', 3.99, 'https://example.com/images/cookies_and_cream.png'),
+   ('Green Tea', 'Green tea flavored ice cream.', 4.50, 'https://example.com/images/green_tea.png'),
+   ('Peanut Butter Swirl', 'Vanilla ice cream with peanut butter swirls.', 4.99, 'https://example.com/images/peanut_butter_swirl.png'),
+   ('Cake', 'Cake-flavored ice cream with sprinkles.', 4.00, 'https://example.com/images/cake.png ')
 `)
   await client.query(`
   CREATE TABLE orders (
