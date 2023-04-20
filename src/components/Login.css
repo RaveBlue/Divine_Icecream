@@ -7,16 +7,16 @@
   padding: 15px;
   color: black;
   flex-wrap: wrap;
-  border: 2px solid black;
+  border: 5px solid pink;
   margin-top: 50px;
   border-radius: 20px;
-  box-shadow: 3px 3px 3px 3px #7777;
-  background-color: #f5e5e5b2;
+  box-shadow: 3px 3px 3px 3px#dbdada;
+  background-color: #fdf2e9;;
 }
 
 .login-form {
   display: flex;
-  color: black;
+  color: rgb(114, 186, 250);
 
   padding-top: 20px;
   flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 .login-header {
-  color: black;
+  color:#333;
 
   display: flex;
   flex-direction: column;
@@ -36,10 +36,17 @@
 .loginButton {
   height: 35px;
   color: black;
-
-  background-color: #f1f4ffb2;
+  border-radius: 20px;
+  border: none;
+  background-color: #90b0e0;
   margin-top: 20px;
+  color:#fff;
 }
+
+.loginButton:hover{
+  background-color: pink;
+}
+
 
 .register-link-container {
   display: flex;
@@ -49,7 +56,7 @@
   color: black;
 
   margin: auto;
-  padding: 15px;
+  padding-top: 20px;
   margin-bottom: -40px;
   justify-content: space-evenly;
 }
@@ -71,12 +78,21 @@ body {
 .usernameLogin,
 .passwordLogin {
   height: 25px;
-  color: blue;
+  color: rgb(10, 10, 10);
   margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  padding-left:10px;
 }
 
 .link {
   text-decoration: none;
+  color:rgb(210, 105, 184);
+  font-size:12px;
+  
+}
+.link:hover{
+  color:blue;
 }
 
 @media screen and (max-width: 768px) {
@@ -87,5 +103,6 @@ body {
   .usernameLogin,
   .passwordLogin {
     width: 300px;
+   
   }
 }

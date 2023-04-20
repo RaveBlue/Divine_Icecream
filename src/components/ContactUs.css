@@ -67,6 +67,13 @@
 
 }
 
+.cf-header{
+  color:#333;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
   .contact-form {
     width: 350px;

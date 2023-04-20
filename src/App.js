@@ -6,11 +6,13 @@ import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Products from "./components/Products";
 import Navbar from "./components/Navbar";
-import Shopping_Cart from "./components/Shopping_Cart";
+import {Shopping_Cart} from "./components/Shopping_Cart";
 import Footer from "./components/Footer";
 import "./components/AboutUs.css"
 import ContactUs from "./components/ContactUs";
 import Review from "./components/Review";
+import Login from "./components/Login";
+//import LoggedUser from "./components/LoggedUser";
 
 
 
@@ -31,6 +33,8 @@ function App() {
          // Learn React
         //</a>
       //</header>
+
+
       <Router>
       <Navbar />
       <Routes>
@@ -40,12 +44,14 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs/>}/>
         <Route path="/ContactUs" element={<ContactUs/>}/>
         <Route path="/Review" element={<Review/>}/>
+        <Route path="/Login" element={<Login/>}/>
+        
         
       </Routes>
       <Footer/>
     </Router>
-    );
-  }
+  );
+}
 
       <Router>
       
@@ -55,11 +61,12 @@ function App() {
   <Route path="/Navbar" component={Navbar} />
   <Route path="/Shopping_Cart" component={Shopping_Cart} />
   <Route path="/ContactUs" component={ContactUs}/>
+  <Route path="/Login" component={Login}/>
 
       
       </Router>
   
-   
+      
 
 
    // </div>

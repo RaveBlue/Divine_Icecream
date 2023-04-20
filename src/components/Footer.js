@@ -9,8 +9,8 @@ function Footer({links}) {
       <footer className="footer">
     
         <h1> Shop </h1>
-        <a className="shop" href="http://localhost:3000/Products" id="Products" to="/Products">
-           Ice-cream
+        <a className="Reviews" href="http://localhost:3000/Reviews" id="Reviews" to="/Reviews">
+           Reviews
         </a>
         <h1> Contact Us </h1>
         <a className="contactus" href="http://localhost:3000/ContactUs" id="ContactUs" to="/ContactUs">

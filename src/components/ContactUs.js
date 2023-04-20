@@ -18,7 +18,9 @@ const ContactUs = () => {
   }
 
   return (
+  
     <div className="contact-form">
+      
       <h2 className="cf-header">We would love to hear from you!</h2>
       <form onSubmit={handleSubmit} className="contact-input">
         <input
