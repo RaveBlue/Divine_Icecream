@@ -23,7 +23,7 @@ const AboutUs = () => {
                  
                 <p className="info"> You can email us at hello@divineicecream.com </p>
                 <p className="otherinfo"><strong>Number:</strong> 333-3535-1313</p>
-                <p className="location"><strong>Located:</strong> El Paso, Texas </p>
+                <p className="location"><strong>Located:</strong> Texas </p>
 
                 <div className="image-logo">
                   <img className="image-logo1"src={Logodivine} alt="Logo"/>

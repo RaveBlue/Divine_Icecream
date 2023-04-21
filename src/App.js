@@ -12,7 +12,8 @@ import "./components/AboutUs.css"
 import ContactUs from "./components/ContactUs";
 import Review from "./components/Review";
 import Login from "./components/Login";
-//import LoggedUser from "./components/LoggedUser";
+import LoggedUser from "./components/LoggedUser";
+import SignUp from "./components/SignUp";
 
 
 
@@ -45,6 +46,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs/>}/>
         <Route path="/Review" element={<Review/>}/>
         <Route path="/Login" element={<Login/>}/>
+        <Route path="/SignUp" element={<SignUp/>}/>
         
         
       </Routes>
@@ -62,6 +64,9 @@ function App() {
   <Route path="/Shopping_Cart" component={Shopping_Cart} />
   <Route path="/ContactUs" component={ContactUs}/>
   <Route path="/Login" component={Login}/>
+  <Route path="/LoggedUser" component={LoggedUser}/>
+  <Route path="/SignUp" component={SignUp}/>
+  <Route path="/Review" component={Review}/>
 
       
       </Router>

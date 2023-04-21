@@ -10,6 +10,9 @@ import customersix from './customersix.jpg';
 import Cookies from './Cookies.png';
 import Cookiescream from './Cookiescream.png';
 import Cake from './Cake.png';
+import PeanutButter from './PeanutButter.png';
+import GreenTea from './GreenTea.png';
+import Strawberry from './Strawberry.png';
 
 //import techcrunch from './techcrunch.png';
 //import businessinsider from './businessinsider.png';
@@ -148,6 +151,95 @@ const Home = () => {
        </div>
      </section>
 
+     <section className="section-meals">
+  <div className="container center-text">
+    <span className="subheading">Ice-Cream</span>
+    <h2 className="heading-secondary">
+      Flavors of our healthy Ice-Cream
+    </h2>
+  </div>
+
+<div className="container grid grid--3-cols margin-bottom-md">
+  <div className="meal">
+     <img src={PeanutButter} 
+     className="meal-img"
+     alt="Peanut Butter"
+     
+     />
+     <div className="meal-content">
+     <div className="meal-tags">
+     <span className="tag">High In Protein</span>
+     </div>
+     <p className="meal-title">Peanut Butter Swirl </p>
+     <ul className="meal-attributes">
+       <li className="meal-attribute"> 
+        <ion-icon name="flame-outline"></ion-icon><span>310 Calories</span>
+       </li>
+
+
+       <li className="meal-attribute"> Protein 20g </li>
+       <li className="meal-attribute"> 4.9 rating (438)  </li>
+     </ul>
+    </div>
+  </div>
+
+
+  <div className="meal">
+    <img src={GreenTea}
+    className="meal-img"
+    alt="Green tea"
+    
+    />
+    <div className="meal-content">
+    <div className="meal-tags">
+    <span className="tag">High In Protein</span>
+    </div>
+    <p className="meal-title">Green Tea </p>
+    <ul className="meal-attributes">
+      <li className="meal-attribute"> 
+       <ion-icon name="flame-outline"></ion-icon><span>310 Calories</span>
+      </li>
+
+
+      <li className="meal-attribute"> Protein 20g </li>
+      <li className="meal-attribute"> 4.9 rating (437)  </li>
+    </ul>
+   </div>
+ </div>
+
+
+
+  <div className="meal"> 
+    <img src={Strawberry}
+  className="meal-img"
+  alt="Strawberry Chocolate"
+  
+  />
+  <div className="meal-content">
+  <div className="meal-tags">
+  <span className="tag">High In Protein</span>
+  </div>
+  <p className="meal-title"> Strawberry Chocolate</p>
+  <ul className="meal-attributes">
+    <li className="meal-attribute"> 
+     <ion-icon name="flame-outline"></ion-icon><span>309 Calories</span>
+    </li>
+
+
+    <li className="meal-attribute"> Protein 20g </li>
+    <li className="meal-attribute"> 4.9 rating (430)  </li>
+  </ul>
+ </div>
+</div>
+
+</div>
+
+<div className="container all-recipes">
+  <a className="link" href="http://localhost:3000/Products">See all Ice-Cream Flavors &rarr;</a>
+</div>
+
+
+</section>
       
 
      </div>

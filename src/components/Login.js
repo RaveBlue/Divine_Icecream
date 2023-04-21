@@ -64,8 +64,8 @@ const Login = ({ setUser, setIsLoggedIn }) => {
   
         <div className="register-link-container">
           <h3>Not Yet a User? </h3>
-          <Link to="/register" className="link">
-            Register
+          <Link to="/SignUp" className="link">
+            Sign up
           </Link>
           <div id="loginMessage">{loginMessage}</div>
         </div>
