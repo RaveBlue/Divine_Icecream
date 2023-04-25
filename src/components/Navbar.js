@@ -27,20 +27,26 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-item">
+          <Link to="/Admin" className="nav-link">
+            Admin
+          </Link>
+        </li>
+        <li className="nav-item">
           <button type="button" className="login-button">
           <Link to="/Login" className="nav-link">
             Login
           </Link>
           </button>
         </li>
-        <li className="nav-item">
+         <li className="nav-item">
           <button type="button" className="signup-button">
             <Link to="/SignUp" className="nav-link">
               Sign up
             </Link>
           </button>
-
-        </li>
+ 
+         </li> 
+        
       </ul>
     </nav>
   );

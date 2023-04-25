@@ -55,7 +55,7 @@ align-items: center;
 object-fit: contain;
 align-content: space-around;
 flex-wrap:no-wrap;
-margin-top:900px;
+margin-top:1700px;
 
 
 }
@@ -426,8 +426,120 @@ letter-spacing:-0.5px;
   font-size:1.8rem;
 }
 
+.link3{
+  color:rgb(210, 105, 184);
+
+}
+
+.link3:hover{
+  color:blue;
+}
+
+/********************/
+/* CTA SECTION*/
+/********************/
+
+.section-cta{
+  /*top/right/bottom/left*/
+  padding:4.6rem 0 12.8rem ;
+
+}
+
+.cta{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  /*background-color:#90b0e0;*/
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0, 0.015);
+  border-radius: 11px;
+
+  background-image:linear-gradient(to right 
+  bottom, rgb(192, 232, 255), #90b0e0);
+  overflow:hidden;
+  
+}
+
+.cta-text-box{
+  padding:4.8rem 6.4rem 6.4rem 6.4rem;
+  color:#45260a;
+  margin-bottom:3.2rem;
+
+}
+
+.cta .heading-secondary{
+  color:#45260a;
+  margin-bottom:3.2rem;
+}
+
+.cta-text{
+  font-size:1.8rem;
+  line-height:1.8;
+  margin-bottom:4.8rem;
+}
 
 
+.cta-img-box{
+  background-image: linear-gradient(
+    to right bottom,
+     rgb(192, 232, 255, 0.35), rgba(144, 176, 224, 0.35) 
+     ),
+   url("Cone.png");
+  background-size:cover;
+  background-position: center;
+}
+
+.cta-form{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap:2.4rem;
+}
+.cta-form label{
+   display:block;
+   font-size:1.6rem;
+   font-weight:500;
+   margin-bottom:1.2rem;
+}
+.cta-form input,
+.cta-form select {
+    width:100%;
+    padding:1.2rem;
+    font-size:1.8rem;
+    font-family:inherit;
+    color:inherit;
+    border:none;
+    background-color: white;
+    border-radius:9px;
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.cta-form input::placeholder{
+  color:#aaa;
+}
+
+.cta *:focus{
+  outline:none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+
+.btn--form{
+  background-color: #c7915f;
+  color:#fdf2e9;
+  align-self:end;
+  padding:1.2rem;
+  border-radius: 8px;
+  border:none;
+  font-size:20px;
+
+}
+
+.btn--form:hover{
+  background-color: #fff;
+  color:#555;
+}
 
 
 

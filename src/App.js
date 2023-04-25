@@ -1,6 +1,7 @@
 
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
+
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
@@ -14,10 +15,20 @@ import Review from "./components/Review";
 import Login from "./components/Login";
 import LoggedUser from "./components/LoggedUser";
 import SignUp from "./components/SignUp";
+import Users from "./components/Users";
+import Admin from "./components/Admin";
+import Dashboard from "./components/Dashboard";
+
+//import Register from "./components/Register";
+
+//import LoggedUser from "./components/LoggedUser";
+//import { Routes, Route } from 'react-router-dom';
+
 
 
 
 function App() {
+  //const[token,setToken] = useState("")
   return (
     //<div className="App">
       //<header className="App-header">
@@ -34,9 +45,9 @@ function App() {
          // Learn React
         //</a>
       //</header>
+     
 
-
-      <Router>
+    <Router>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home/>} />
@@ -47,6 +58,14 @@ function App() {
         <Route path="/Review" element={<Review/>}/>
         <Route path="/Login" element={<Login/>}/>
         <Route path="/SignUp" element={<SignUp/>}/>
+        <Route path="/Users" element={<Users/>}/>
+        <Route path="/Admin" element={<Admin/>}/>
+        <Route path="/Dashboard" element={<Dashboard/>}/>
+        
+        
+        
+        
+       
         
         
       </Routes>
@@ -55,7 +74,7 @@ function App() {
   );
 }
 
-      <Router>
+       <Router>
       
   <Route exact path="/" component={Home} />
   <Route path="/AboutUs" component={AboutUs} />
@@ -67,9 +86,15 @@ function App() {
   <Route path="/LoggedUser" component={LoggedUser}/>
   <Route path="/SignUp" component={SignUp}/>
   <Route path="/Review" component={Review}/>
+  <Route path="/Users" component={Users}/>
+  <Route path="/Admin" component={Admin}/>
+  <Route path="/Dashboard" element={Dashboard}/>
+  
+        
 
+  
       
-      </Router>
+      </Router> 
   
       
 

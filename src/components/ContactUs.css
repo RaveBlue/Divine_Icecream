@@ -12,6 +12,7 @@
   padding: 15px;
   flex-wrap: wrap;
   margin-top: 50px;
+  box-shadow: 3px 3px 3px 3px#dbdada;
 }
 
 .contact-input {

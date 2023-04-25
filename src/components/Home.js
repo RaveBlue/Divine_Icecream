@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Footer from "./Footer";
+//import Footer from "./Footer";
 import customerone from './customerone.jpg';
 import customertwo from './customertwo.jpg';
 import customerthree from './customerthree.jpg';
@@ -13,6 +13,7 @@ import Cake from './Cake.png';
 import PeanutButter from './PeanutButter.png';
 import GreenTea from './GreenTea.png';
 import Strawberry from './Strawberry.png';
+//import Cone from './Cone.jpg';
 
 //import techcrunch from './techcrunch.png';
 //import businessinsider from './businessinsider.png';
@@ -235,19 +236,73 @@ const Home = () => {
 </div>
 
 <div className="container all-recipes">
-  <a className="link" href="http://localhost:3000/Products">See all Ice-Cream Flavors &rarr;</a>
+  <a className="link3" href="http://localhost:3000/Products">See all Ice-Cream Flavors &rarr;</a>
 </div>
 
 
 </section>
-      
 
-     </div>
+<section className="section-cta">
+        <div className="container">
+          <div className="cta">
+          <div className="cta-text-box">
+            <h2 className="heading-secondary">Get your first ice-cream tub for free!</h2>
+            <p className="cta-text"> Healthy, tasty Ice-cream is waiting for you. Start eating well today. You can cancel or pause anytime. 
+              And the first Ice-cream tub is on us!</p>
 
-     
-     
-   
-    
+              <form className="cta-form" action="#">
+                <div>
+                <label for="full-name"> Full Name</label>
+                <input 
+                id="full-name" 
+                type="text"  
+                placeholder="Your name" 
+                required 
+                />
+                </div>
+                
+                <div>
+                <label for="email">Email address</label>
+                <input 
+                id="email" 
+                type="email" 
+                placeholder="me@example.com" 
+                required 
+                />
+                </div>
+
+              <div>
+              <label for="select-where">Where did you hear from us?
+              </label>
+               <select id="select-where" required>
+                 <option value="">Please choose one option:</option>
+                 <option value="friends">Friends and family</option>
+                 <option value="youtube">YouTube video</option>
+                 <option value="youtube">Podcast</option>
+                 <option value="youtube">Instagram ad</option>
+                 <option value="youtube">Others</option>
+               </select>
+               </div>
+
+
+
+                <button className="btn btn--form">Sign up now</button>
+
+              </form>
+          </div>
+          <div 
+          className="cta-img-box" 
+          role="img" 
+          aria-label="woman enjoying ice-cream"
+          ></div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+  
     
    );
 };

@@ -10,4 +10,8 @@ export { default as AboutUs } from "./AboutUs";
 export { default as Navbar } from "./Navbar";
 export { default as ContactUs } from "./ContactUs";
 export { default as LoggedUser } from "./LoggedUser";   
+//export { default as Register} from "./Register";
+export { default as Users } from "./Users";
+export { default as Admin } from "./Admin";
+export { default as Dashboard } from "./Dashboard";
 export { default as SignUp } from "./SignUp";

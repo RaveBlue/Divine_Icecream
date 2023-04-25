@@ -14,6 +14,14 @@
   background-color: #fdf2e9;;
 }
 
+.log{
+  text-align: center;
+  color:#333;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+
 .login-form {
   display: flex;
   color: rgb(114, 186, 250);
@@ -95,6 +103,12 @@ body {
   color:blue;
 }
 
+.logged{
+  color:#333;
+  margin-top:20px;
+ text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .login-form {
     width: 300px;
@@ -106,3 +120,4 @@ body {
    
   }
 }
+
