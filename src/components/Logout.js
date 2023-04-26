@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import { Link } from "react-router-dom";
 import "./Logout.css";
 
@@ -22,6 +22,30 @@ function Logout(props) {
   ) : (
     <Link to={"/Home"} />
   );
+}
+
+export default Logout;
+ */
+import React from "react";
+import { Link } from "react-router-dom";
+
+function Logout(props) {
+  const { setToken, setUsername } = props;
+
+  function deleteUserData() {
+    setToken("");
+    localStorage.setItem("user-token", "");
+    localStorage.setItem("user-username", "");
+    setUsername("");
+  }
+
+  deleteUserData();
+
+  return( 
+  <>
+    <Link to={"/home"} />
+  </>
+)
 }
 
 export default Logout;

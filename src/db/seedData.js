@@ -1,6 +1,6 @@
 const { createUser } = require("./Users");
 const { createProduct } = require("../components/Products");
-const { createReviews } = require("./reviews");
+const { createReviews } = require("../components/Reviews");
 const { createShoppingCart } = require("../components/Shopping_Cart");
 const { addItemsToCart } = require("./shopping_cartitems");
 const client = require("./client");

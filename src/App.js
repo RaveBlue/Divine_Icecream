@@ -1,7 +1,9 @@
 
 import './App.css';
 import React, { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
+//import { redirect } from 'react-router-dom';
+//import { useNavigate, useLocation,userAxiosPrivate } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
@@ -17,7 +19,7 @@ import LoggedUser from "./components/LoggedUser";
 import SignUp from "./components/SignUp";
 import Users from "./components/Users";
 import Admin from "./components/Admin";
-import Dashboard from "./components/Dashboard";
+//import Dashboard from "./components/Dashboard";
 
 //import Register from "./components/Register";
 
@@ -29,6 +31,8 @@ import Dashboard from "./components/Dashboard";
 
 function App() {
   //const[token,setToken] = useState("")
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   return (
     //<div className="App">
       //<header className="App-header">
@@ -56,11 +60,32 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs/>}/>
         <Route path="/ContactUs" element={<ContactUs/>}/>
         <Route path="/Review" element={<Review/>}/>
-        <Route path="/Login" element={<Login/>}/>
-        <Route path="/SignUp" element={<SignUp/>}/>
+        <Route 
+        path="/Login" 
+        element={
+        <Login
+            setUsername={setUsername}
+            setPassword={setPassword}
+            username={username}
+            password={password}
+            />
+          }
+        />
+
+        <Route 
+        path="/SignUp" 
+        element={
+        <SignUp
+            setUsername={setUsername}
+            setPassword={setPassword}
+            username={username}
+            password={password}
+            />
+           }
+        />
         <Route path="/Users" element={<Users/>}/>
         <Route path="/Admin" element={<Admin/>}/>
-        <Route path="/Dashboard" element={<Dashboard/>}/>
+        
         
         
         
@@ -88,7 +113,7 @@ function App() {
   <Route path="/Review" component={Review}/>
   <Route path="/Users" component={Users}/>
   <Route path="/Admin" component={Admin}/>
-  <Route path="/Dashboard" element={Dashboard}/>
+  
   
         
 

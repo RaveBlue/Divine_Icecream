@@ -1,10 +1,10 @@
-/* import { useState, useEffect } from "react";
+ /* import { useState, useEffect } from "react";
 
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation} from "react-router-dom";
 
 const Users = () => {
     const [users, setUsers] = useState();
-    //const axiosPrivate = useAxiosPrivate();
+    //const axiosPrivate = userAxiosPrivate();
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -21,7 +21,7 @@ const Users = () => {
                 isMounted && setUsers(response.data);
             } catch (err) {
                 console.error(err);
-                navigate('/login', { state: { from: location }, replace: true });
+                navigate('/Login', { state: { from: location }, replace: true });
             }
         }
 
@@ -57,10 +57,10 @@ export default Users;
 
 
 
-
-
-
  */
+
+
+ 
 
 
 
