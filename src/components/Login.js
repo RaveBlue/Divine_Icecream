@@ -154,6 +154,7 @@ const Login = ({ setUser, setIsLoggedIn }) => {
   
     async function handleLogin(e) {
       e.preventDefault();
+      alert("Thank you for joining us! Hope you enjoy the Ice-cream!");
       const { token, user } = await loginUser(
         username,
         password,

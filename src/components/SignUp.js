@@ -135,6 +135,7 @@ const SignUp = (props) => {
   
   const userSubmit = async (event) => {
     event.preventDefault();
+    alert("Thank you for Signing up!");
     try {
       const result = await registerUser(username, password);
       if (result.message === "You're signed up!") {
