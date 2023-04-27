@@ -1,10 +1,12 @@
 import "./AvailableProducts.css";
+import Card from "./Card";
 import React from 'react';
+import Item from "./Item";
 
 const ICECREAM = [
 {
   id:'m1',
-  name:'Green Tea Ice-cream',
+  name:'Green Tea',
   description:'Green tea flavored ice cream.',
   price:4.50,
 },
@@ -49,12 +51,19 @@ const ICECREAM = [
 ];
 
 const AvailableProducts =() => {
-  const productsList =ICECREAM.map(product => <li>{product.name}</li>);
+  const productsList =ICECREAM.map((product) => (
+  <Item 
+  key={product.id} 
+  name={product.name} 
+  description={product.description} 
+  price={product.price}
+  />
+  ));
 
   return <section className="Products">
-    <ul>
-      {productsList}
-    </ul>
+    <Card>
+    <ul>{productsList}</ul>
+    </Card>
   </section>
 };
 

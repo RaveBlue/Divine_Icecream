@@ -20,6 +20,9 @@ import Users from "./components/Users";
 import Admin from "./components/Admin";
 import AvailableProducts from "./components/AvailableProducts";
 import ProductSummary from "./components/ProductSummary";
+import Card from "./components/Card";
+import Item from "./components/Item";
+import Input from "./components/Input";
 //import Dashboard from "./components/Dashboard";
 
 //import Register from "./components/Register";
