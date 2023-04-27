@@ -1,4 +1,4 @@
-import React, { useState, useEffect }from "react";
+//import React, { useState, useEffect }from "react";
 //import{
  // addProductToUserCart,
   //getProducts,
@@ -8,11 +8,36 @@ import React, { useState, useEffect }from "react";
 //} from "../api/index.js";
 //import { Link, useNavigate } from "react-router-dom";
 //import { toast } from "react-toastify";
+import {Fragment} from 'react';
 import './Products.css';
+import ProductSummary from './ProductSummary';
+import AvailableProducts from './AvailableProducts';
 
 
-export const Shop = () => {
-  return <div>Ice-cream</div>
+const Products = () => {
+  
+
+  return (
+  
+
+  <div className="featured-products"> 
+   <div className="top">
+    <h1>Products</h1>
+    <p className="description-products"> Reach your health and fitness goals with Ice-cream!</p>
+   </div>
+   <div className="bottom">
+      
+      </div>
+   <Fragment>
+    <ProductSummary/>
+    <AvailableProducts/>
+   </Fragment>
+
+
+  
+  </div>
+  
+  );
 };
 
-export default Shop;
+export default Products; 

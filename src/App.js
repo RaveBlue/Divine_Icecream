@@ -1,9 +1,8 @@
 
 import './App.css';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 //import { redirect } from 'react-router-dom';
-//import { useNavigate, useLocation,userAxiosPrivate } from "react-router-dom";
+import { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
@@ -19,6 +18,8 @@ import LoggedUser from "./components/LoggedUser";
 import SignUp from "./components/SignUp";
 import Users from "./components/Users";
 import Admin from "./components/Admin";
+import AvailableProducts from "./components/AvailableProducts";
+import ProductSummary from "./components/ProductSummary";
 //import Dashboard from "./components/Dashboard";
 
 //import Register from "./components/Register";
@@ -33,7 +34,17 @@ function App() {
   //const[token,setToken] = useState("")
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  <Fragment>
+      
+      <main>
+        <Products/>
+      </main>
+    </Fragment>
+  
   return (
+    
+  
+
     //<div className="App">
       //<header className="App-header">
         

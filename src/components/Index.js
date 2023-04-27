@@ -15,3 +15,5 @@ export { default as Users } from "./Users";
 export { default as Admin } from "./Admin";
 //export { default as Dashboard } from "./Dashboard";
 export { default as SignUp } from "./SignUp";
+export { default as AvailableProducts } from "./AvailableProducts";
+export { default as ProductSummary } from "./ProductSummary";
