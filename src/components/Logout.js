@@ -43,7 +43,7 @@ function Logout(props) {
 
   return( 
   <>
-    <Link to={"/home"} />
+    <Link to={"/Home"} />
   </>
 )
 }

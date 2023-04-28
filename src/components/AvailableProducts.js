@@ -2,6 +2,7 @@ import "./AvailableProducts.css";
 import Card from "./Card";
 import React from 'react';
 import Item from "./Item";
+import Cake from "./Cake.png";
 
 
 const ICECREAM = [
@@ -10,6 +11,7 @@ const ICECREAM = [
   name:'Green Tea',
   description:'Green tea flavored ice cream.',
   price:4.50,
+  image:'Cake.png',
 },
 {
   id:'m2',
@@ -51,7 +53,7 @@ const ICECREAM = [
 
 ];
 
-const AvailableProducts =() => {
+const AvailableProducts =(props) => {
   const productsList =ICECREAM.map((product) => (
   <Item 
   id={product.id}
@@ -59,6 +61,7 @@ const AvailableProducts =() => {
   name={product.name} 
   description={product.description} 
   price={product.price}
+  image={product.image} alt={props.name}
   />
   ));
 

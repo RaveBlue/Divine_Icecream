@@ -15,6 +15,7 @@ import AvailableProducts from './AvailableProducts';
 //import Modal from "./Modal";
 import Header from "./Header";
 import Navbar from "./Navbar";
+import HeaderCartButton from './HeaderCartButton';
 
 
 const Products = () => {
@@ -34,6 +35,7 @@ const Products = () => {
    <Fragment>
     <ProductSummary/>
     <AvailableProducts/>
+    
    </Fragment>
 
   

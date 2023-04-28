@@ -1,6 +1,7 @@
 
 import './App.css';
 import React, { useState } from 'react';
+//import{useState} from 'react';
 //import { redirect } from 'react-router-dom';
 import { Fragment} from 'react';
 import ReactDOM from 'react-dom';
@@ -27,6 +28,10 @@ import ItemForm from "./components/ItemForm";
 import Input from "./components/Input";
 import Modal from "./components/Modal";
 import Header from "./components/Header";
+import CartProvider from "./components/CartProvider";
+//import CardContext from "./components/CardContext";
+//import CartProvider from "./components/CartProvider";
+//import HeaderCartButton from './components';
 //import Dashboard from "./components/Dashboard";
 
 //import Register from "./components/Register";
@@ -51,14 +56,14 @@ function App() {
     setShoppingCartIsShown(false);
   };
    
-   <Fragment>
+   <CartProvider>
       {ShoppingCartIsShown && <ShoppingCart onClose={hideShoppingCartHandler}/>}
-      <Navbar onShowShoppingCart ={showShoppingCartHandler}/>
+      <ShoppingCart/>
+      <Header onShowShoppingCart ={showShoppingCartHandler}/>
       <main>
-        <Header/>
         <Products/>
       </main>
-    </Fragment>
+    </CartProvider>
    
   
   return (
@@ -122,22 +127,14 @@ function App() {
         <Route path="/ProductSummary" element={<ProductSummary/>}/>
         <Route path="/ItemForm" element={<ItemForm/>}/>
         <Route path="/Header" element={<Header/>}/>
-        
-        
-        
-        
-        
-       
-        
-        
+    
       </Routes>
       <Footer/>
     </Router>
  );
 } 
 
-       <Router>
-      
+  <Router>
   <Route exact path="/" component={Home} />
   <Route path="/AboutUs" component={AboutUs} />
   <Route path="/Products" component={Products} />
@@ -157,21 +154,10 @@ function App() {
   <Route path="/AvailableProducts" component={AvailableProducts}/>
   <Route path="/ProductSummary" component={ProductSummary}/>
   <Route path="/ItemForm" component={ItemForm}/>
+  </Router> 
   
-  
-        
-
-   
-      
-      </Router> 
-  
-      
-
-
    // </div>
 
-  
-    
   //);
 //}
 

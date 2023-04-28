@@ -1,6 +1,9 @@
 
 import './ShoppingCart.css';
 import Modal from "./Modal";
+import HeaderCartButton from './HeaderCartButton';
+//import Header from "./Header";
+import Navbar from "./Navbar";
 
 const ShoppingCart = (props) => {
   const ShoppingCartItems =(
@@ -22,6 +25,7 @@ const ShoppingCart = (props) => {
     <button className="button--alt" onClick={props.onClose}> Close</button>
     <button className="button">Order</button>
   </div>
+
   </Modal>
 
   );

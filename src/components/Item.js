@@ -11,6 +11,7 @@ const Item = props => {
       
       <div className="description">{props.description}</div>
       <div className="price">{price}</div>
+      <div className="image7">{props.image} alt={props.name}</div>
        </div>
     <div>
        <ItemForm/>

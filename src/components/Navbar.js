@@ -7,6 +7,9 @@ import {Fragment} from 'react';
 import HeaderCartButton from './HeaderCartButton';
 //import ShoppingCart from './ShoppingCart';
 //import Modal from "./Modal";
+import CartIcon from "./CartIcon";
+//import Header from "./Header";
+//import ShoppingCart from './ShoppingCart';
 
 
 const Navbar = (props) => {
@@ -27,18 +30,21 @@ const Navbar = (props) => {
           </Link>
         </li>
 
+         <li>
          <Fragment>
           <header className="header">
-        {/* <li className="nav-item"> */}
-        <Link to="/ShoppingCart" className="nav-link">
-          <button className="button2" onClick={props.onClick}> </button>
-          <HeaderCartButton/>
-          </Link>
-       {/*  </li> */}
+        <Link to="/ShoppingCart" className="nav-link"> 
+         <button className="button" onClick={props.onClick}>
+            </button>
+          <HeaderCartButton onClick={props.onShowShoppingCart}/>
+          
+         </Link> 
         </header>
         
        </Fragment> 
-        
+       
+        </li>
+
         <li className="nav-item">
           <Link to="/#" className="nav-link5">
             Welcome!

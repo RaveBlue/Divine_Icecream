@@ -23,3 +23,8 @@ export { default as ItemForm } from "./ItemForm";
 export { default as Input } from "./Input";
 export { default as Modal } from "./Modal";
 export { default as Header } from "./Header";
+export { default as HeaderCartButton } from "./HeaderCartButton";
+export { default as CartIcon } from "./CartIcon";
+//export {default as CardContext} from "./CartContext";
+//export {default as CartProvider} from "./CartProvider";
+
