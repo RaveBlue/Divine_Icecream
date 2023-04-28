@@ -13,6 +13,8 @@ import './Products.css';
 import ProductSummary from './ProductSummary';
 import AvailableProducts from './AvailableProducts';
 //import Modal from "./Modal";
+import Header from "./Header";
+import Navbar from "./Navbar";
 
 
 const Products = () => {
@@ -33,7 +35,6 @@ const Products = () => {
     <ProductSummary/>
     <AvailableProducts/>
    </Fragment>
-
 
   
   </div>

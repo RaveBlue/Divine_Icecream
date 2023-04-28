@@ -23,8 +23,10 @@ import AvailableProducts from "./components/AvailableProducts";
 import ProductSummary from "./components/ProductSummary";
 import Card from "./components/Card";
 import Item from "./components/Item";
+import ItemForm from "./components/ItemForm";
 import Input from "./components/Input";
 import Modal from "./components/Modal";
+import Header from "./components/Header";
 //import Dashboard from "./components/Dashboard";
 
 //import Register from "./components/Register";
@@ -53,6 +55,7 @@ function App() {
       {ShoppingCartIsShown && <ShoppingCart onClose={hideShoppingCartHandler}/>}
       <Navbar onShowShoppingCart ={showShoppingCartHandler}/>
       <main>
+        <Header/>
         <Products/>
       </main>
     </Fragment>
@@ -111,6 +114,14 @@ function App() {
         />
         <Route path="/Users" element={<Users/>}/>
         <Route path="/Admin" element={<Admin/>}/>
+        <Route path="/Modal" element={<Modal/>}/>
+        <Route path="/Input" element={<Input/>}/>
+        <Route path="/Item" element={<Item/>}/>
+        <Route path="/Card" element={<Card/>}/>
+        <Route path="/AvailableProducts" element={<AvailableProducts/>}/>
+        <Route path="/ProductSummary" element={<ProductSummary/>}/>
+        <Route path="/ItemForm" element={<ItemForm/>}/>
+        <Route path="/Header" element={<Header/>}/>
         
         
         
@@ -139,6 +150,13 @@ function App() {
   <Route path="/Review" component={Review}/>
   <Route path="/Users" component={Users}/>
   <Route path="/Admin" component={Admin}/>
+  <Route path="/Modal" component={Modal}/>
+  <Route path="/Input" component={Input}/>
+  <Route path="/Item" component={Item}/>
+  <Route path="/Card" component={Card}/>
+  <Route path="/AvailableProducts" component={AvailableProducts}/>
+  <Route path="/ProductSummary" component={ProductSummary}/>
+  <Route path="/ItemForm" component={ItemForm}/>
   
   
         

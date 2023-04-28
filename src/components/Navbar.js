@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from './logo .png';
 import {Fragment} from 'react';
+import HeaderCartButton from './HeaderCartButton';
 //import ShoppingCart from './ShoppingCart';
+//import Modal from "./Modal";
 
 
 const Navbar = (props) => {
@@ -24,19 +26,19 @@ const Navbar = (props) => {
             Products 
           </Link>
         </li>
-        <Fragment>
-        <li className="nav-item">
-          <button className="button2" onClick={props.onClick}>
-          <Link to="/ShoppingCart" className="nav-link">
-            Cart 
-          </Link>
-         
-          <button/>
-          <span className="badge">3</span>
-          </button>
-        </li>
-       </Fragment>
 
+         <Fragment>
+          <header className="header">
+        {/* <li className="nav-item"> */}
+        <Link to="/ShoppingCart" className="nav-link">
+          <button className="button2" onClick={props.onClick}> </button>
+          <HeaderCartButton/>
+          </Link>
+       {/*  </li> */}
+        </header>
+        
+       </Fragment> 
+        
         <li className="nav-item">
           <Link to="/#" className="nav-link5">
             Welcome!

@@ -3,9 +3,9 @@ import './ShoppingCart.css';
 import Modal from "./Modal";
 
 const ShoppingCart = (props) => {
-  const CartItems =(
+  const ShoppingCartItems =(
     <ul className="cart-items">
-  {[{id:'c1',name:'Green Tea', amount:2, price:4.50}].map((item) => ( 
+  {[{id:'c1',name:'Cookies and Cream', amount:2, price:4.50}].map((item) => ( 
   <li>{item.name}</li>
   ))}
    </ul>
@@ -13,7 +13,7 @@ const ShoppingCart = (props) => {
 
   return (
   <Modal onClose={props.onClose}>
-    {CartItems}
+    {ShoppingCartItems}
   <div className="total">
     <span>Total Amount</span>
     <span>12.99</span>

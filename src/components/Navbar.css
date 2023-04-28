@@ -4,6 +4,7 @@
   display:flex;
   justify-content:space-between;
   padding:10px;
+  margin-top: 40px;
 }
   
 .navbar-nav{
@@ -67,3 +68,27 @@
 .signup-button:hover {
   background-color: #bfe0ea;
 }
+
+.badge{
+  background-color: #d86f6b;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+
+ /* .button2{
+  background-color: #b89357;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.button2:hover {
+  background-color: #bfe0ea;
+}  */
