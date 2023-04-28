@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 //import LoggedUser from "./LoggedUser";
 import './Navbar.css';
 import logo from './logo .png';
+import {Fragment} from 'react';
+//import ShoppingCart from './ShoppingCart';
 
-const Navbar = () => {
+
+const Navbar = (props) => {
   return (
     <nav className="navbar">
       <div className="logo">
@@ -21,11 +24,19 @@ const Navbar = () => {
             Products 
           </Link>
         </li>
+        <Fragment>
         <li className="nav-item">
-          <Link to="/Shopping_Cart" className="nav-link">
+          <button className="button2" onClick={props.onClick}>
+          <Link to="/ShoppingCart" className="nav-link">
             Cart 
           </Link>
+         
+          <button/>
+          <span className="badge">3</span>
+          </button>
         </li>
+       </Fragment>
+
         <li className="nav-item">
           <Link to="/#" className="nav-link5">
             Welcome!

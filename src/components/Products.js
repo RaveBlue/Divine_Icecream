@@ -12,6 +12,7 @@ import {Fragment} from 'react';
 import './Products.css';
 import ProductSummary from './ProductSummary';
 import AvailableProducts from './AvailableProducts';
+//import Modal from "./Modal";
 
 
 const Products = () => {

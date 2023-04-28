@@ -53,6 +53,7 @@ const ICECREAM = [
 const AvailableProducts =() => {
   const productsList =ICECREAM.map((product) => (
   <Item 
+  id={product.id}
   key={product.id} 
   name={product.name} 
   description={product.description} 

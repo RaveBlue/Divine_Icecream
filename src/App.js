@@ -2,13 +2,14 @@
 import './App.css';
 import React, { useState } from 'react';
 //import { redirect } from 'react-router-dom';
-import { Fragment } from 'react';
+import { Fragment} from 'react';
+import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Products from "./components/Products";
 import Navbar from "./components/Navbar";
-import {Shopping_Cart} from "./components/Shopping_Cart";
+import ShoppingCart from "./components/ShoppingCart";
 import Footer from "./components/Footer";
 import "./components/AboutUs.css"
 import ContactUs from "./components/ContactUs";
@@ -23,6 +24,7 @@ import ProductSummary from "./components/ProductSummary";
 import Card from "./components/Card";
 import Item from "./components/Item";
 import Input from "./components/Input";
+import Modal from "./components/Modal";
 //import Dashboard from "./components/Dashboard";
 
 //import Register from "./components/Register";
@@ -37,17 +39,27 @@ function App() {
   //const[token,setToken] = useState("")
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  <Fragment>
-      
+  const [ShoppingCartIsShown, setShoppingCartIsShown] = useState(false);
+
+  const showShoppingCartHandler =() => {
+    setShoppingCartIsShown(true);
+  };
+
+  const hideShoppingCartHandler = () => {
+    setShoppingCartIsShown(false);
+  };
+   
+   <Fragment>
+      {ShoppingCartIsShown && <ShoppingCart onClose={hideShoppingCartHandler}/>}
+      <Navbar onShowShoppingCart ={showShoppingCartHandler}/>
       <main>
         <Products/>
       </main>
     </Fragment>
+   
   
   return (
     
-  
-
     //<div className="App">
       //<header className="App-header">
         
@@ -70,7 +82,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route path="/Products" element={<Products/>} />
-        <Route path="/Shopping_Cart" element={<Shopping_Cart/>}/> 
+        <Route path="/ShoppingCart" element={<ShoppingCart/>}/> 
         <Route path="/AboutUs" element={<AboutUs/>}/>
         <Route path="/ContactUs" element={<ContactUs/>}/>
         <Route path="/Review" element={<Review/>}/>
@@ -110,8 +122,8 @@ function App() {
       </Routes>
       <Footer/>
     </Router>
-  );
-}
+ );
+} 
 
        <Router>
       
@@ -119,7 +131,7 @@ function App() {
   <Route path="/AboutUs" component={AboutUs} />
   <Route path="/Products" component={Products} />
   <Route path="/Navbar" component={Navbar} />
-  <Route path="/Shopping_Cart" component={Shopping_Cart} />
+  <Route path="/ShoppingCart" component={ShoppingCart} />
   <Route path="/ContactUs" component={ContactUs}/>
   <Route path="/Login" component={Login}/>
   <Route path="/LoggedUser" component={LoggedUser}/>
@@ -131,7 +143,7 @@ function App() {
   
         
 
-  
+   
       
       </Router> 
   
